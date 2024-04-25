@@ -4,7 +4,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "Volcanic Site",
-  tagline: "A website to record my life",
+  tagline: "A website to record something",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -25,26 +25,19 @@ const config: Config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "zh-Hans",
+    locales: ["zh-Hans"],
   },
 
   presets: [
     [
       "classic",
       {
-        // docs: false,
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -63,19 +56,19 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Home",
-      logo: {
-        alt: "Site Logo",
-        src: "/static/img/logo.svg",
-      },
+      title: "主页",
+      // logo: {
+      //   alt: "Site Logo",
+      //   src: "/static/img/logo.svg",
+      // },
       items: [
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "教程",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        { to: "/blog", label: "日志", position: "left" },
         {
           href: "https://github.com/volcanicll",
           label: "GitHub",
@@ -84,8 +77,8 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      style: "light",
+      copyright: `Copyright © ${new Date().getFullYear()} volcanic. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
