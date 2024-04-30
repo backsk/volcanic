@@ -57,10 +57,7 @@ const config: Config = {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "主页",
-      // logo: {
-      //   alt: "Site Logo",
-      //   src: "/static/img/logo.svg",
-      // },
+      hideOnScroll: true,
       items: [
         {
           type: "docSidebar",
