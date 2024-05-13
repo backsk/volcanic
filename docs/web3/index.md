@@ -1,8 +1,4 @@
----
-title: Crypto Web3 Info
-date: 2024-05-07
-published: true
----
+# web3
 
 ## Resources
 
